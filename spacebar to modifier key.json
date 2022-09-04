@@ -23,21 +23,6 @@
                         {
                             "key_code": "spacebar"
                         }
-                    ],
-                    "conditions": [
-                        {
-                            "type": "device_if",
-                            "identifiers": [
-                                {
-                                    "vendor_id": 6421,
-                                    "product_id": 61166
-                                },
-                                {
-                                    "vendor_id": 1452,
-                                    "product_id": 598
-                                }
-                            ]
-                        }
                     ]
                 }
             ]
@@ -63,21 +48,6 @@
                     "to_if_alone": [
                         {
                             "key_code": "spacebar"
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "type": "device_if",
-                            "identifiers": [
-                                {
-                                    "vendor_id": 6421,
-                                    "product_id": 61166
-                                },
-                                {
-                                    "vendor_id": 1452,
-                                    "product_id": 598
-                                }
-                            ]
                         }
                     ]
                 }
