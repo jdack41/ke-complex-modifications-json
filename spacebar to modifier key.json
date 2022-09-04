@@ -1,0 +1,87 @@
+{
+    "title": "spacebar to modifier key",
+    "rules": [
+        {
+            "description": "Change spacebar to fn if pressed with other keys (Post spacebar when pressed alone)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "spacebar",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "fn"
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "key_code": "spacebar"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "device_if",
+                            "identifiers": [
+                                {
+                                    "vendor_id": 6421,
+                                    "product_id": 61166
+                                },
+                                {
+                                    "vendor_id": 1452,
+                                    "product_id": 598
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Change spacebar to right_shift if pressed with other keys (Post spacebar when pressed alone)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "spacebar",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_shift"
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "key_code": "spacebar"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "device_if",
+                            "identifiers": [
+                                {
+                                    "vendor_id": 6421,
+                                    "product_id": 61166
+                                },
+                                {
+                                    "vendor_id": 1452,
+                                    "product_id": 598
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
